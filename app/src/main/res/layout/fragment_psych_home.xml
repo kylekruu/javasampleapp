@@ -1,0 +1,61 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout10"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.gall8.psych_home">
+
+
+    <at.grabner.circleprogress.CircleProgressView
+        android:id="@+id/cpv"
+        android:layout_width="194dp"
+        android:layout_height="153dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="136dp"
+        android:textAlignment="center"
+        app:cpv_autoTextColor="true"
+        app:cpv_autoTextSize="true"
+        app:cpv_barColor="#00c3a0"
+        app:cpv_barWidth="16dp"
+        app:cpv_blockCount="18"
+        app:cpv_blockScale="1"
+        app:cpv_direction="CCW"
+        app:cpv_maxValue="100"
+        app:cpv_rimWidth="10dp"
+        app:cpv_showUnit="true"
+        app:cpv_textColor="#00c3a0"
+        app:cpv_textScale="1"
+        app:cpv_unit="%"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/info"
+        android:layout_width="385dp"
+        android:layout_height="127dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="44dp"
+        android:alpha="0.5"
+        android:background="@drawable/view"
+        app:layout_constraintEnd_toEndOf="@+id/cpv"
+        app:layout_constraintStart_toStartOf="@+id/cpv"
+        app:layout_constraintTop_toBottomOf="@+id/cpv" />
+
+    <Button
+        android:id="@+id/btnDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="256dp"
+        android:layout_marginTop="28dp"
+        android:text="Suggest"
+        app:layout_constraintBottom_toBottomOf="@+id/info"
+        app:layout_constraintStart_toStartOf="@+id/info"
+        app:layout_constraintTop_toTopOf="@+id/info"
+        app:layout_constraintVertical_bias="0.279" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Gall8</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="drawer_open">Menu opened</string>
+    <string name="drawer_close">Menu closed</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_guardian">Guardian</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+
+    <string-array name="questions">
+        <item>Do you have any of these medical conditions?</item>
+
+        <item>Do you spend time excercising atleast twice a week</item>
+
+        <item>Are you easily agitated?</item>
+
+        <item>How many cups of caffeinated drinks do you usually consume in a week? (like coffee, soda, tea)</item>
+
+        <item>Do you smoke cigarettes or drink alcoholic drinks?</item>
+
+        <item>How many packs of cigarettes can you smoke per week?</item>
+
+        <item>How often do you drink alcohol in a week?</item>
+
+        <item>How many hours of sleep do you usually get?</item>
+
+        <item>When you are stressed, are you usually aware of that situation? </item>
+
+        <item>How do you cope with stress?</item>
+
+    </string-array>
+
+    <string-array name="spin">
+        <item>User</item>
+        <item>Guardian</item>
+    </string-array>
+    <string name="key">
+    <item>AIzaSyAS7M4XDfopPKzSOOBTJri0joDwN_2VS5g</item>
+</string>
+    <string name="appname">
+    <item>GooglePlacesGoogleMaps</item>
+</string>
+
+    <string name="cancel">
+    <item>Cancel</item>
+    </string>
+
+    <string name="a">
+    <item>aa</item>
+</string>
+    <string name="b">
+    <item>bb</item>
+</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_psych">psych</string>
+</resources>

@@ -1,0 +1,340 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout8"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/graph"
+    tools:context="com.example.hp.gall8.psych_dash">
+
+    <lecho.lib.hellocharts.view.LineChartView
+        android:id="@+id/lc2"
+        android:layout_width="322dp"
+        android:layout_height="169dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/hpicker"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/hpicker"
+        app:layout_constraintTop_toBottomOf="@+id/hpicker" />
+
+    <com.goodiebag.horizontalpicker.HorizontalPicker
+        android:id="@+id/hpicker"
+        android:layout_width="322dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:itemHeight="40dp"
+        app:itemMargin="50dp"
+        app:itemWidth="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:textSize="12sp" />
+
+    <ScrollView
+        android:layout_width="395dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lc2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:id="@+id/info"
+                    android:layout_width="match_parent"
+                    android:layout_height="127dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:alpha="0.5"
+                    android:background="@drawable/view"
+
+
+                    />
+
+                <at.grabner.circleprogress.CircleProgressView
+                    android:id="@+id/cpv"
+                    android:layout_width="107dp"
+                    android:layout_height="99dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:textAlignment="center"
+                    app:cpv_autoTextColor="true"
+                    app:cpv_autoTextSize="true"
+                    app:cpv_barColor="#00c3a0"
+                    app:cpv_barWidth="16dp"
+                    app:cpv_blockCount="18"
+                    app:cpv_blockScale="1"
+                    app:cpv_direction="CCW"
+                    app:cpv_maxValue="100"
+                    app:cpv_rimWidth="10dp"
+                    app:cpv_showUnit="true"
+                    app:cpv_textColor="#00c3a0"
+                    app:cpv_textScale="1"
+                    app:cpv_unit="%"
+                    app:layout_constraintBottom_toBottomOf="@+id/info"
+                    app:layout_constraintEnd_toEndOf="@+id/info"
+                    app:layout_constraintHorizontal_bias="0.905"
+                    app:layout_constraintStart_toStartOf="@+id/info"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.666" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="138dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Average Stress Level"
+                    app:layout_constraintBottom_toBottomOf="@+id/info"
+                    app:layout_constraintEnd_toStartOf="@+id/cpv"
+                    app:layout_constraintHorizontal_bias="0.408"
+                    app:layout_constraintStart_toStartOf="@+id/info"
+                    app:layout_constraintTop_toTopOf="@+id/info"
+                    app:layout_constraintVertical_bias="0.629" />
+
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:id="@+id/info2"
+                    android:layout_width="match_parent"
+                    android:layout_height="127dp"
+
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:alpha="0.5"
+                    android:background="@drawable/view"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <at.grabner.circleprogress.CircleProgressView
+                    android:id="@+id/cpv1"
+                    android:layout_width="107dp"
+                    android:layout_height="99dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:textAlignment="center"
+                    app:cpv_autoTextColor="true"
+                    app:cpv_autoTextSize="true"
+                    app:cpv_barColor="#00c3a0"
+                    app:cpv_barWidth="16dp"
+                    app:cpv_blockCount="18"
+                    app:cpv_blockScale="1"
+                    app:cpv_direction="CCW"
+                    app:cpv_maxValue="100"
+                    app:cpv_rimWidth="10dp"
+                    app:cpv_showUnit="true"
+                    app:cpv_textColor="#00c3a0"
+                    app:cpv_textScale="1"
+                    app:cpv_unit="%"
+                    app:layout_constraintBottom_toBottomOf="@+id/info2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.016"
+                    app:layout_constraintStart_toStartOf="@+id/info2"
+                    app:layout_constraintTop_toTopOf="@+id/info2"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="144dp"
+                    android:layout_height="36dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Previous Stress Level"
+                    app:layout_constraintBottom_toBottomOf="@+id/info2"
+                    app:layout_constraintEnd_toEndOf="@+id/info2"
+                    app:layout_constraintStart_toEndOf="@+id/cpv1"
+                    app:layout_constraintTop_toTopOf="@+id/info2"
+                    app:layout_constraintVertical_bias="0.6" />
+
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:id="@+id/info3"
+                    android:layout_width="match_parent"
+                    android:layout_height="127dp"
+
+                    android:layout_marginTop="8dp"
+                    android:alpha="0.5"
+                    android:background="@drawable/view"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="0dp" />
+
+                <at.grabner.circleprogress.CircleProgressView
+                    android:id="@+id/cpv2"
+                    android:layout_width="107dp"
+                    android:layout_height="99dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:textAlignment="center"
+                    app:cpv_autoTextColor="true"
+                    app:cpv_autoTextSize="true"
+                    app:cpv_barColor="#00c3a0"
+                    app:cpv_barWidth="16dp"
+                    app:cpv_blockCount="18"
+                    app:cpv_blockScale="1"
+                    app:cpv_direction="CCW"
+                    app:cpv_maxValue="100"
+                    app:cpv_rimWidth="10dp"
+                    app:cpv_showUnit="true"
+                    app:cpv_textColor="#00c3a0"
+                    app:cpv_textScale="1"
+                    app:cpv_unit="%"
+                    app:layout_constraintBottom_toBottomOf="@+id/info3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.921"
+                    app:layout_constraintStart_toStartOf="@+id/info3"
+                    app:layout_constraintTop_toTopOf="@+id/info3"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:text="Highest Stress Level"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/cpv2"
+                    app:layout_constraintHorizontal_bias="0.256"
+                    app:layout_constraintStart_toStartOf="@+id/info3"
+                    app:layout_constraintTop_toTopOf="@+id/info3" />
+
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:id="@+id/info4"
+                    android:layout_width="match_parent"
+                    android:layout_height="127dp"
+
+                    android:layout_marginTop="8dp"
+                    android:alpha="0.5"
+                    android:background="@drawable/view"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="0dp" />
+
+
+                <at.grabner.circleprogress.CircleProgressView
+                    android:id="@+id/cpv3"
+                    android:layout_width="107dp"
+                    android:layout_height="99dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="8dp"
+                    android:textAlignment="center"
+                    app:cpv_autoTextColor="true"
+                    app:cpv_autoTextSize="true"
+                    app:cpv_barColor="#00c3a0"
+                    app:cpv_barWidth="16dp"
+                    app:cpv_blockCount="18"
+                    app:cpv_blockScale="1"
+                    app:cpv_direction="CCW"
+                    app:cpv_maxValue="100"
+                    app:cpv_rimWidth="10dp"
+                    app:cpv_showUnit="true"
+                    app:cpv_textColor="#00c3a0"
+                    app:cpv_textScale="1"
+                    app:cpv_unit="%"
+                    app:layout_constraintBottom_toBottomOf="@+id/info4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.088"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/info4"
+                    app:layout_constraintVertical_bias="0.0" />
+
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:id="@+id/info5"
+                    android:layout_width="match_parent"
+                    android:layout_height="127dp"
+
+                    android:layout_marginTop="8dp"
+                    android:alpha="0.5"
+                    android:background="@drawable/view"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="8dp" />
+
+
+                <at.grabner.circleprogress.CircleProgressView
+                    android:id="@+id/cpv4"
+                    android:layout_width="107dp"
+                    android:layout_height="99dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:textAlignment="center"
+                    app:cpv_autoTextColor="true"
+                    app:cpv_autoTextSize="true"
+                    app:cpv_barColor="#00c3a0"
+                    app:cpv_barWidth="16dp"
+                    app:cpv_blockCount="18"
+                    app:cpv_blockScale="1"
+                    app:cpv_direction="CCW"
+                    app:cpv_maxValue="100"
+                    app:cpv_rimWidth="10dp"
+                    app:cpv_showUnit="true"
+                    app:cpv_textColor="#00c3a0"
+                    app:cpv_textScale="1"
+                    app:cpv_unit="%"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.903"
+                    app:layout_constraintStart_toStartOf="@+id/info5"
+                    app:layout_constraintTop_toTopOf="@+id/info5"
+                    app:layout_constraintVertical_bias="0.0" />
+
+
+            </android.support.constraint.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
